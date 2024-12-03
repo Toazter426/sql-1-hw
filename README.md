@@ -30,21 +30,21 @@
 '''
 SELECT DISTINCT district FROM address WHERE district LIKE 'K%a' AND district NOT LIKE '% %';
 '''
-![t1](ссылка на скриншот)
+![t1](https://github.com/Toazter426/sql-1-hw/blob/main/img/sql_1_1.png)
 ### Задание 2
 
 Получите из таблицы платежей за прокат фильмов информацию по платежам, которые выполнялись в промежуток с 15 июня 2005 года по 18 июня 2005 года **включительно** и стоимость которых превышает 10.00.
 '''
 SELECT * FROM payment WHERE amount > 10 AND payment_date BETWEEN '2005-06-15 00:00:00' AND '2005-06-19 00:00:00';
 '''
-![Название скриншота](ссылка на скриншот)
+![Название скриншота](https://github.com/Toazter426/sql-1-hw/blob/main/img/sql_1_2.png)
 ### Задание 3
 
 Получите последние пять аренд фильмов.
 '''
 SELECT * FROM rental ORDER BY rental_id DESC LIMIT 5;
 '''
-![Название скриншота](ссылка на скриншот)
+![Название скриншота](https://github.com/Toazter426/sql-1-hw/blob/main/img/sql_1_3.png)
 ### Задание 4
 
 Одним запросом получите активных покупателей, имена которых Kelly или Willie. 
@@ -55,5 +55,5 @@ SELECT * FROM rental ORDER BY rental_id DESC LIMIT 5;
 '''
 SELECT LOWER( REPLACE(first_name,'LL','PP')),LOWER(last_name) FROM customer WHERE active=1 AND (first_name LIKE 'KELLY' or first_name LIKE 'WILLIE');
 '''
-![Название скриншота](ссылка на скриншот)
+![Название скриншота](https://github.com/Toazter426/sql-1-hw/blob/main/img/sql_1_4.png)
 
